@@ -15,6 +15,7 @@ test: TestRunner.o StudentTest1.o StudentTest2.o $(OBJECTS)
 
 main: Main.o $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $^ -o main
+	./main
 
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
@@ -32,5 +33,5 @@ valgrind: test
 	valgrind --leak-check=full --error-exitcode=99 --tool=memcheck $(VALGRIND_FLAGS) ./test 
 
 clean:
-	rm -f *.o test
+	rm -f *.o test main
 	rm -f StudentTest*.cpp

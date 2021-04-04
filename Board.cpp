@@ -50,11 +50,11 @@ void Board::show() {
     const uint colsToShow = 150;
     uint startRow = 0;
     uint startCol = 0;
-    if (_lastRow > rowsToShow / 2) {
-        startRow = _lastRow - rowsToShow / 2;
+    if (_lastRow > rowsToShow / 4) {
+        startRow = _lastRow - rowsToShow / 4;
     }
-    if (_lastCol > colsToShow / 2) {
-        startCol = _lastCol - colsToShow / 2;
+    if (_lastCol > colsToShow / 4) {
+        startCol = _lastCol - colsToShow / 4;
     }
     for (uint i = startRow; i < rowsToShow + startRow; i++) {
         for (uint j = startCol; j < colsToShow + startCol; j++) {
