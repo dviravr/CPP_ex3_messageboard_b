@@ -1,7 +1,7 @@
 /**
- * Demo program for message-board exercise.
+ * Main program for message-board exercise.
  * 
- * Author: Erel Segal-Halevi
+ * Author: Dvir Avrahami
  * Since : 2021-03
  */
 

@@ -21,8 +21,13 @@ class Board {
         _lastRow = 20;
         _lastCol = 75;
     }
+    /* post message on the board */
     void post(uint row, uint col, Direction dir, string const &msg);
+
+    /* read message from the board */
     string read(uint row, uint col, Direction dir, uint msgLen);
+
+    /* show the board */
     void show();
 };
 }  // namespace ariel
