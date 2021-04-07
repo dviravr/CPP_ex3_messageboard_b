@@ -3,7 +3,6 @@
 #include <unordered_map>
 
 #include "Direction.hpp"
-using ariel::Direction;
 
 using namespace std;
 

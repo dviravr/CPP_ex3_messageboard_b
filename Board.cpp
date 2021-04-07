@@ -5,7 +5,6 @@
 
 #include "Direction.hpp"
 
-using ariel::Direction;
 using namespace std;
 using namespace ariel;
 
